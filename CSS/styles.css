@@ -8,7 +8,7 @@
 }
 
 body {
-  background: linear-gradient(135deg, #0a6a82, #000000); /* Replace 'background.jpg' with your image path */
+  background: linear-gradient(135deg, teal, black); /* Replace 'background.jpg' with your image path */
   padding: 50px;
   border-radius: 10px;
   color: #fff; /* Text color on the background */
