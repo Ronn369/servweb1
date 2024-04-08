@@ -1,0 +1,140 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    background: linear-gradient(135deg, teal, black);
+    background-color: #0a6a82; /* fallback color if gradient doesn't work */
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  .header {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+  .icon-container {
+    padding-left: 250px;
+    padding-top: 120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-end; /* Align items to the bottom */
+    width: 80%; /* Increased width for better spacing */
+  }
+
+  .icon-box {
+    position: relative;
+    padding: 10PX;
+    width: 225px; /* 1.5 times the original size */
+    height: 225px; /* 1.5 times the original size */
+    background-color: #f0f0f0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden; /* Ensure images fully fill the box */
+    transition: transform 0.3s ease; /* Add transition for pop-out effect */
+    cursor: pointer; /* Add cursor pointer */
+    animation: pop-out 4s infinite; /* Add automatic pop-out animation */
+  }
+
+  @keyframes pop-out {
+    0% {
+      transform: scale(1);
+    }
+    25% {
+      transform: scale(1.1);
+    }
+    50% {
+      transform: scale(1);
+    }
+    75% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+
+  .icon-box:hover {
+    animation-play-state: paused; /* Pause animation on hover */
+  }
+
+  .icon-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensure images fully fill the box */
+  }
+
+  .icon-label {
+    position: absolute; /* Position absolute to place text outside the box */
+    bottom: 10px; /* Adjust as needed for spacing */
+    text-align: center;
+    width: 100%;
+    font-size: 16px; /* Adjust font size as needed */
+    font-weight: bold; /* Make text bold */
+    color: black; /* Set text color to black */
+    opacity: 0; /* Initially hidden */
+    transition: opacity 0.3s ease; /* Add transition for fade-in effect */
+  }
+
+  .icon-box:hover .icon-label {
+    opacity: 1; /* Fade in label on hover */
+  }
+
+  .sub-services-container {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-radius: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    display: none;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .sub-service {
+    width: 80px;
+    height: 80px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .sub-service img {
+    width: 60%;
+    height: 60%;
+    object-fit: contain;
+  }
+
+  .icon-box.active + .sub-services-container {
+    display: flex;
+  }
+
+  .go-to-home {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+    color: tan; /* Set text color to tan */
+    animation: pulse 2s infinite alternate;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.1);
+    }
+  }

@@ -1,0 +1,29 @@
+/* Custom CSS */
+/* Add your custom styles here */
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+body {
+  background: linear-gradient(135deg, #0a6a82, #000000); /* Replace 'background.jpg' with your image path */
+  padding: 50px;
+  border-radius: 10px;
+  color: #fff; /* Text color on the background */
+}
+
+.container2 {
+  animation: gradientAnimation 10s linear infinite;
+  padding: 50px;
+  border-radius: 10px;
+  color: #fff; /* Text color on the background */
+  margin: 50px auto; /* Center the container horizontally */
+  max-width: 600px; /* Limit the container width */
+  opacity: 0; /* Initially hide the container */
+}
+
+.container2.show {
+  opacity: 1; /* Show the container after animation starts */
+}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Welcome to the Service Page</title>
+<link rel="stylesheet" href="styles.css"> <!-- Linking external CSS file -->
+</head>
+<body>
+
+<a class="go-to-home" href="your_home_page_url">Go to home page</a>
+
+<h1 class="header">Welcome to the Service Page</h1>
+
+<h2 class="header">Choose any of the services you want</h2>
+
+<div class="icon-container">
+  <div class="icon-box" onclick="toggleSubServices('electrician')">
+    <img src="electrician.jpeg" alt="Electrician">
+    <div class="icon-label"><strong>Electrician</strong></div>
+  </div>
+  <div class="icon-box" onclick="toggleSubServices('plumber')">
+    <img src="plumber.jpg" alt="Plumber">
+    <div class="icon-label"><strong>Plumber</strong></div>
+  </div>
+  <div class="icon-box" onclick="toggleSubServices('saloon')">
+    <img src="saloon.webp" alt="Saloon">
+    <div class="icon-label"><strong>Saloon</strong></div>
+  </div>
+  <div class="icon-box" onclick="toggleSubServices('houseCleaning')">
+    <img src="house cleaning.jpg" alt="House Cleaning">
+    <div class="icon-label"><strong>House Cleaning</strong></div>
+  </div>
+</div>
+
+<div id="electricianSubServices" class="sub-services-container">
+  <div class="sub-service">
+    <img src="board_switch.jpg" alt="Board Switch">
+  </div>
+  <div class="sub-service">
+    <img src="fan_mechanic.jpg" alt="Fan Mechanic">
+  </div>
+  <div class="sub-service">
+    <img src="ac_mechanic.jpg" alt="AC Mechanic">
+  </div>
+</div>
+
+<div id="plumberSubServices" class="sub-services-container">
+  <div class="sub-service">
+    <img src="pipe_leakage.jpg" alt="Pipe Leakage">
+  </div>
+  <div class="sub-service">
+    <img src="drain_clog.jpg" alt="Drain Clog">
+  </div>
+</div>
+
+<script src="script.js"></script> <!-- Linking external JavaScript file -->
+</body>
+</html>

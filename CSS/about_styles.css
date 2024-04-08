@@ -1,0 +1,60 @@
+/* styles.css */
+
+body {
+    background: linear-gradient(135deg, #0a6a82, #000000); /* Gradient background */
+    padding: 50px;
+    border-radius: 10px;
+    color: #fff; /* Text color on the background */
+    font-family: Arial, sans-serif; /* Added font-family */
+  }
+  
+  .container {
+    padding: 20px;
+  }
+  
+  .navbar-brand {
+    font-size: 1.5rem;
+  }
+  
+  .mission-section {
+    background-color: #1a1c1d7c;
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .mission-section h2 {
+    color: #00ffff;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us-section {
+    padding: 40px 20px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+  }
+  
+  .why-choose-us-section h2 {
+    color: #00ffff;
+    margin-bottom: 20px;
+  }
+  
+  .why-choose-us-section h4 {
+    color: #00bfff;
+  }
+  
+  .join-us-section {
+    background-color: #232425;
+    padding: 40px 20px;
+    border-radius: 10px;
+  }
+  
+  .join-us-button {
+    background-color: #2881a7;
+    border: none;
+  }
+  
+  .join-us-button:hover {
+    background-color: #218838;
+  }
+  

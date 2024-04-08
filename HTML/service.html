@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - Home Services</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../CSS/service_styles.css">
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">
+        <img src="https://i.pinimg.com/474x/03/8c/21/038c21ee19c7facb04a78bc1b2de7f50.jpg" alt="Logo" width="40" height="40" class="d-inline-block align-top mr-2" loading="lazy">
+        Home Care
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="../index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/service.html">Services</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/contact.html">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="../HTML/login.html">Login</a>
+            
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <!-- Main Content -->
+    <br>
+    <br>
+    <br>
+    <br>
+    <h1 class="header">Welcome to the Service Page</h1>
+
+    <h2 class="header">Choose any of the services you want</h2>
+
+    <div class="icon-container">
+        <div class="icon-box" onclick="toggleSubServices('electrician')">
+            <img src="../img/electrician.jpg" alt="Electrician">
+            <div class="icon-label"><strong>Electrician</strong></div>
+        </div>
+        <div class="icon-box" onclick="toggleSubServices('plumber')">
+            <img src="../img/plumber.jpg" alt="Plumber">
+            <div class="icon-label"><strong>Plumber</strong></div>
+        </div>
+        <div class="icon-box" onclick="toggleSubServices('saloon')">
+            <img src="../img/saloon.jpg" alt="Saloon">
+            <div class="icon-label"><strong>Saloon</strong></div>
+        </div>
+        <div class="icon-box" onclick="toggleSubServices('houseCleaning')">
+            <img src="../img/cleaner.jpg" alt="House Cleaning">
+            <div class="icon-label"><strong>House Cleaning</strong></div>
+        </div>
+    </div>
+
+
+  <!-- Bootstrap JS and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
